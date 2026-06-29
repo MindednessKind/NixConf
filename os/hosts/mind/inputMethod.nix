@@ -1,5 +1,5 @@
 { self, inputs, ... }: {
-  flake.nixosModules.inputMethod = { config, pkgs, ... }:
+  flake.nixosModules.inputMethod = { config, pkgs, lib, ... }:
     let
       myFcitx5Rime = pkgs.fcitx5-rime.override {
         rimeDataPkgs = with pkgs; [
@@ -40,7 +40,7 @@
         ];
       };
 
-      environment.variables = {
+      environment.variables = lib.mkForce {
         XMODIFIERS = "@im=fcitx";
         GTK_IM_MODULE = "";
         QT_IM_MODULE = "";

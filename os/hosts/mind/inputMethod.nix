@@ -42,8 +42,9 @@
 
       environment.variables = {
         XMODIFIERS = "@im=fcitx";
-        QT_IM_MODULE = "fcitx";
-        QT_IM_MODULES = "fcitx";
+        GTK_IM_MODULE = "";
+        QT_IM_MODULE = "";
+        QT_IM_MODULES = "";
         MOZ_ENABLE_WAYLAND = 1;
 
       };

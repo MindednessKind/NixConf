@@ -127,6 +127,7 @@
       mesa-demos
       fastfetch
 
+      lazygit
       wl-clipboard
 
       inputs.nixvim.packages.${pkgs.stdenv.hostPlatform.system}.default

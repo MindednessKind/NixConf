@@ -15,7 +15,8 @@
         self.nixosModules.nvim
 
         self.nixosModules.ai
-        self.nixosModules.chatApps
+        self.nixosModules.wine
+        # self.nixosModules.chatApps
 
       ];
     nix.settings.experimental-features = [ "nix-command" "flakes" ];

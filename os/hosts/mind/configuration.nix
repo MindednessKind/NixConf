@@ -16,6 +16,7 @@
 
         self.nixosModules.ai
         self.nixosModules.wine
+        self.nixosModules.bottles
         # self.nixosModules.chatApps
 
       ];

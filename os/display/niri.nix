@@ -132,24 +132,23 @@
           "Mod+Tab".open-overview = _: { };
 
 
-          "Alt+Space".spawn-sh = "noctalia msg panel-toggle launcher";
+          "Alt+Space".spawn-sh = "noctalia-shell ipc call launcher toggle";
 
-          "Mod+S".spawn-sh = "noctalia msg panel-toggle control-center";
+          "Mod+S".spawn-sh = "noctalia-shell ipc call control-center toggle";
 
-          "Mod+Comma".spawn-sh = "noctalia msg settings-toggle";
+          "Mod+Comma".spawn-sh = "noctalia-shell ipc call settings toggle";
 
-          "XF86AudioRaiseVolume".spawn-sh = "noctalia msg volumn-up";
+          "XF86AudioRaiseVolume".spawn-sh = "noctalia-shell ipc call volume up";
 
-          "XF86AudioLowerVolume".spawn-sh = "noctalia msg volumn-down";
+          "XF86AudioLowerVolume".spawn-sh = "noctalia-shell ipc call volume down";
 
-          "XF86AudioMute".spawn-sh = "noctalia msg volumn-mute";
+          "XF86AudioMute".spawn-sh = "noctalia-shell ipc call volume mute";
 
-          "XF86MonBrightnessUp".spawn-sh = "noctalia msg brightness-up";
+          "XF86MonBrightnessUp".spawn-sh = "noctalia-shell ipc call brightness up";
 
-          "XF86MonBrightnessDown".spawn-sh = "noctalia msg brightness-down";
+          "XF86MonBrightnessDown".spawn-sh = "noctalia-shell ipc call brightness down";
 
-          "Alt+F4".spawn-sh = "noctalia msg panel-toggle session";
-
+          "Alt+F4".spawn-sh = "noctalia-shell ipc call session toggle";
 
           "Mod+Return".spawn-sh = "alacritty";
 

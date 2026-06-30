@@ -78,8 +78,11 @@
           "Mod+Left".focus-column-or-monitor-left = _: { };
           "Mod+Right".focus-column-or-monitor-right = _: { };
 
-          "Mod+Shift+Left".move-column-left = _: { };
-          "Mod+Shift+Right".move-column-right = _: { };
+          "Mod+Shift+Left".move-column-to-monitor-left = _: { };
+          "Mod+Shift+Right".move-column-to-monitor-right = _: { };
+
+          "Mod+Ctrl+Left".move-column-left = _: { };
+          "Mod+Ctrl+Right".move-column-right = _: { };
 
           "Mod+Backspace".maximize-column = _: { };
           "Mod+Backslash".switch-preset-column-width = _: { };

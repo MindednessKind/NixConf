@@ -2,6 +2,7 @@
 
   flake.nixosModules.niri = { pkgs, lib, ... }: {
 
+    services.xserver.enable = true;
     programs.niri = {
 
       enable = true;

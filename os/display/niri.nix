@@ -15,22 +15,7 @@
   perSystem = { pkgs, lib, ... }: {
     packages.myNiri = inputs.wrapper-modules.wrappers.niri.wrap {
       inherit pkgs;
-      config.kdl.content = ''
-        window-rule {
-          match app-id="dev.noctalia.Noctalia.Settings"
-          open-floating true
-          default-column-width { fixed 1080; }
-          default-window-height { fixed 920; }
 
-          clip-to-geometry true
-          geometry-corner-radius 20
-        }
-
-        layer-rule {
-          match namespace="^noctalia-backdrop"
-          place-within-backdrop true
-        }
-      '';
 
       settings = {
         spawn-at-startup = [
@@ -80,6 +65,26 @@
         };
 
         shell.niri_overview_type_to_launch_enabled = true;
+
+        window-rules = [
+          {
+            matches = [
+              {
+                app-id = "dev.noctalia.Noctalia.Settings";
+              }
+            ];
+            open-floating = true;
+            default-column-width = {
+              fixed = 1080;
+            };
+            default-column-height = {
+              # 注意这里不是 default-window-height
+              fixed = 920;
+            };
+            clip-to-geometry = true;
+            geometry-corner-radius = 20;
+          }
+        ];
 
         binds = {
 

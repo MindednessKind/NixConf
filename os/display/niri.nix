@@ -93,9 +93,43 @@
 
           "Mod+Tab".open-overview = _: { };
 
+
           "Alt+Space".spawn-sh = "${
             lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.myNoctalia
-          } ipc call launcher toggle";
+          } msg panel-toggle launcher";
+
+          "Mod+S".spawn-sh = "${
+            lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.myNoctalia
+          } msg panel-toggle control-center";
+
+          "Mod+Comma".spawn-sh = "${
+            lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.myNoctalia
+          } msg settings-toggle";
+
+          "XF86AudioRaiseVolumn".spawn-sh = "${
+            lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.myNoctalia
+          } msg volumn-up";
+
+          "XF86AudioLowerVolumn".spawn-sh = "${
+            lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.myNoctalia
+          } msg volumn-down";
+
+          "XF86AudioMute".spawn-sh = "${
+            lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.myNoctalia
+          } msg volumn-mute";
+
+          "XF86MonBrightnessUp".spawn-sh = "${
+            lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.myNoctalia
+          } msg brightness-up";
+
+          "XF86MonBrightnessDown".spawn-sh = "${
+            lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.myNoctalia
+          } msg brightness-down";
+
+          "Alt+F4".spawn-sh = "${
+            lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.myNoctalia
+          } msg panel-toggle session";
+
 
           "Mod+Return".spawn-sh = "alacritty";
 

@@ -4,7 +4,7 @@
     programs.nix-ld.enable = true;
 
     environment.systemPackages = with pkgs; [
-      wineWow64Packages.waylandFull
+      wineWow64Packages.stableFull
       winetricks
     ];
   };

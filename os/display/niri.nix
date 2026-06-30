@@ -128,41 +128,23 @@
           "Mod+Tab".open-overview = _: { };
 
 
-          "Alt+Space".spawn-sh = "${
-            lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.myNoctalia
-          } msg panel-toggle launcher";
+          "Alt+Space".spawn-sh = "noctalia msg panel-toggle launcher";
 
-          "Mod+S".spawn-sh = "${
-            lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.myNoctalia
-          } msg panel-toggle control-center";
+          "Mod+S".spawn-sh = "noctalia msg panel-toggle control-center";
 
-          "Mod+Comma".spawn-sh = "${
-            lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.myNoctalia
-          } msg settings-toggle";
+          "Mod+Comma".spawn-sh = "noctalia msg settings-toggle";
 
-          "XF86AudioRaiseVolume".spawn-sh = "${
-            lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.myNoctalia
-          } msg volumn-up";
+          "XF86AudioRaiseVolume".spawn-sh = "noctalia msg volumn-up";
 
-          "XF86AudioLowerVolume".spawn-sh = "${
-            lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.myNoctalia
-          } msg volumn-down";
+          "XF86AudioLowerVolume".spawn-sh = "noctalia msg volumn-down";
 
-          "XF86AudioMute".spawn-sh = "${
-            lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.myNoctalia
-          } msg volumn-mute";
+          "XF86AudioMute".spawn-sh = "noctalia msg volumn-mute";
 
-          "XF86MonBrightnessUp".spawn-sh = "${
-            lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.myNoctalia
-          } msg brightness-up";
+          "XF86MonBrightnessUp".spawn-sh = "noctalia msg brightness-up";
 
-          "XF86MonBrightnessDown".spawn-sh = "${
-            lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.myNoctalia
-          } msg brightness-down";
+          "XF86MonBrightnessDown".spawn-sh = "noctalia msg brightness-down";
 
-          "Alt+F4".spawn-sh = "${
-            lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.myNoctalia
-          } msg panel-toggle session";
+          "Alt+F4".spawn-sh = "noctalia msg panel-toggle session";
 
 
           "Mod+Return".spawn-sh = "alacritty";

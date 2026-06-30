@@ -87,6 +87,7 @@
       fastfetch
 
       lazygit
+      flatpak
       wl-clipboard
 
     ];

@@ -64,25 +64,33 @@
           honor-xdg-activation-with-invalid-serial = _: { };
         };
 
-        niri_overview_type_to_launch_enabled = true;
+        # niri_overview_type_to_launch_enabled = true;
 
         window-rules = [
+
+          {
+            geometry-corner-radius = 20;
+            clip-to-geometry = true;
+          }
+
           {
             matches = [
               {
                 app-id = "dev.noctalia.Noctalia.Settings";
               }
             ];
+
             open-floating = true;
+
             default-column-width = {
               fixed = 1080;
             };
-            default-column-height = {
+
+            default-window-height = {
               fixed = 920;
             };
-            clip-to-geometry = true;
-            geometry-corner-radius = 20;
           }
+
         ];
 
         binds = {

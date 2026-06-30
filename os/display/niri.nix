@@ -64,7 +64,7 @@
           honor-xdg-activation-with-invalid-serial = _: { };
         };
 
-        shell.niri_overview_type_to_launch_enabled = true;
+        niri_overview_type_to_launch_enabled = true;
 
         window-rules = [
           {
@@ -78,7 +78,6 @@
               fixed = 1080;
             };
             default-column-height = {
-              # 注意这里不是 default-window-height
               fixed = 920;
             };
             clip-to-geometry = true;

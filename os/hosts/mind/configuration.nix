@@ -18,7 +18,7 @@
         self.nixosModules.wine
         # self.nixosModules.lutris
         # self.nixosModules.bottles
-        self.nixosModules.chatApps
+        # self.nixosModules.chatApps
 
       ];
     nix.settings.experimental-features = [ "nix-command" "flakes" ];

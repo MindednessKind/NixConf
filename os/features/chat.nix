@@ -1,12 +1,12 @@
-{ self, inputs, ... }:
-{
+{ self, inputs, ... }: {
 
   flake.nixosModules.chatApps = { pkgs, ... }: {
-    environment.systemPackages = with pkgs; {
-      qq
-        wechat
-        telegram-desktop
 
-        };
-        };
-        }
+    environment.systemPackages = with pkgs; [
+      qq
+      wechat
+      telegram-desktop
+    ];
+
+  };
+}

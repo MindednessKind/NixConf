@@ -15,6 +15,23 @@
   perSystem = { pkgs, lib, ... }: {
     packages.myNiri = inputs.wrapper-modules.wrappers.niri.wrap {
       inherit pkgs;
+      config."config.kdl".content = /* kdl */ ''
+        window-rule {
+          match app-id="dev.noctalia.Noctalia.Settings"
+          open-floating true
+          default-column-width { fixed 1080; }
+          default-window-height { fixed 920; }
+
+          clip-to-geometry true
+          geometry-corner-radius 20
+        }
+
+        layer-rule {
+          match namespace="^noctalia-backdrop"
+          place-within-backdrop true
+        }
+      '';
+
       settings = {
         spawn-at-startup = [
           (lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.myNoctalia)
@@ -57,18 +74,6 @@
 
         };
 
-        window-rule = {
-          match = {
-            app-id = "dev.noctalia.Noctalia.Settings";
-          };
-          open-floating = true;
-          default-column-width.fixed = 1080;
-          default-column-height.fixed = 920;
-
-          geometry-corner-radius = 20;
-          clip-to-geometry = true;
-
-        };
 
         debug = {
           honor-xdg-activation-with-invalid-serial = _: { };

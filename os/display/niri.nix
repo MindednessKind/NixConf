@@ -15,7 +15,7 @@
   perSystem = { pkgs, lib, ... }: {
     packages.myNiri = inputs.wrapper-modules.wrappers.niri.wrap {
       inherit pkgs;
-      config."config.kdl".content = /* kdl */ ''
+      config.kdl.content = /* kdl */ ''
         window-rule {
           match app-id="dev.noctalia.Noctalia.Settings"
           open-floating true

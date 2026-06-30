@@ -1,5 +1,5 @@
 { self, inputs, ... }: {
-  flake.nixosModules.wine = { pkgs, ... }:
+  flake.nixosModules.bottles = { pkgs, ... }:
     {
       environment.systemPackages = with pkgs; [
         bottles

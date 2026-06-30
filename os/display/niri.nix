@@ -57,7 +57,24 @@
 
         };
 
+        window-rule = {
+          match = {
+            app-id = "dev.noctalia.Noctalia.Settings";
+          };
+          open-floating = true;
+          default-column-width.fixed = 1080;
+          default-column-height.fixed = 920;
 
+          geometry-corner-radius = 20;
+          clip-to-geometry = true;
+
+        };
+
+        debug = {
+          honor-xdg-activation-with-invalid-serial = _: { };
+        };
+
+        shell.niri_overview_type_to_launch_enabled = true;
 
         binds = {
 
@@ -106,11 +123,11 @@
             lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.myNoctalia
           } msg settings-toggle";
 
-          "XF86AudioRaiseVolumn".spawn-sh = "${
+          "XF86AudioRaiseVolume".spawn-sh = "${
             lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.myNoctalia
           } msg volumn-up";
 
-          "XF86AudioLowerVolumn".spawn-sh = "${
+          "XF86AudioLowerVolume".spawn-sh = "${
             lib.getExe self.packages.${pkgs.stdenv.hostPlatform.system}.myNoctalia
           } msg volumn-down";
 

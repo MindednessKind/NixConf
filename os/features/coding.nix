@@ -20,7 +20,7 @@
       wireshark
       bluez
       iw
-      rfkill
+      libuuid
       wirelesstools
       tcpdump
       usbutils

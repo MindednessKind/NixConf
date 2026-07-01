@@ -13,6 +13,9 @@
       cmake
 
       pkg-config
+
+      openssl
+      sqlite
     ];
 
 

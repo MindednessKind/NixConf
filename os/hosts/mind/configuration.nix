@@ -11,6 +11,7 @@
 
         self.nixosModules.alacritty
         self.nixosModules.inputMethod
+        self.nixosModules.coding
         self.nixosModules.yazi
         self.nixosModules.nvim
 

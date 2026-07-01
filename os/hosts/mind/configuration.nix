@@ -92,6 +92,14 @@
       flatpak
       wl-clipboard
 
+      fontconfig
+      freetype
+      gtk3
+      gdk-pixbuf
+      glib
+      cairo
+      pango
+
     ];
 
 

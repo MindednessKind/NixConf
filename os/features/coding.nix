@@ -16,6 +16,17 @@
 
       openssl
       sqlite
+
+      wireshark
+      bluez
+      wireless-tools
+      tcpdump
+      usbutils
+      iproute2
+      ethtool
+      lsof
+      gawk
+      coreutils
     ];
 
 

@@ -5,12 +5,14 @@
       python313
 
       rustc
-      catgo
+      cargo
 
       gcc
       clang
       gnumake
       cmake
+
+      pkg-config
     ];
 
 

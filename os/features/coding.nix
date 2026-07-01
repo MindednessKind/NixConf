@@ -19,6 +19,8 @@
 
       wireshark
       bluez
+      iw
+      rfkill
       wirelesstools
       tcpdump
       usbutils
@@ -30,6 +32,7 @@
     ];
 
 
+    programs.wireshark.enable = true;
   };
 
 }

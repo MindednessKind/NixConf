@@ -19,7 +19,7 @@
 
       wireshark
       bluez
-      wireless-tools
+      wirelesstools
       tcpdump
       usbutils
       iproute2

@@ -4,9 +4,13 @@
       enable = true;
       device = "nodev"; # UEFI 系统
       efiSupport = true;
-      useOSProber = true; # 自动探测 Windows 启动项 [citation:1][citation:3]
+      useOSProber = true;
+
+      default = "saved";
+      extraEntries = "GRUB_SAVEDEFAULT=true";
     };
-    boot.loader.efi.canTouchEfiVariables = true;
+
+
   };
 
 }
